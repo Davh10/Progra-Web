@@ -1,0 +1,42 @@
+ .menu
+ {
+	 height:100px;
+	 background-color:#b2d6ff;
+	 overflow:hidden;
+ }
+ 
+ .sidebar
+ {
+	 float: right;
+	 height:300px;
+	 width:400px;
+	 background-color:#f09a9d;
+ }
+ 
+  .content
+ {
+	 	 float: right;
+	 height:500px;
+ 	 width: 450px;
+	 background-color:#f5cf8e;
+ }
+ 
+  .footer
+ {
+	 clear: both;
+	 height:220px;
+	 background-color:#d6e9fe;
+ }
+ .page
+ {
+
+	 width: 900px;
+	 margin: 0 auto;
+	
+ }
+  .container
+ {
+	overflow: hidden;
+	 height:220px;
+	 background-color:#d6e9fe;
+ }
