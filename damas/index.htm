@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El programa chido 2</title>
+    <link rel='stylesheet' href='style.css'/>
+
+</head>
+<body onclick="clickon(event)" >
+    
+<div id='principal'>
+	<div id='primera' class='fila'>
+		<div  class='blancas'></div>
+		<div  id='12b' class='negras'> <div class="ficharoja" id="12f"> </div>  </div>
+		<div  class='blancas'></div>
+		<div  id='14b' class='negras'> <div class="ficharoja" id="14f"> </div> </div>
+		<div  class='blancas'></div>
+		<div  id='16b' class='negras'> <div class="ficharoja" id="16f"> </div> </div>
+		<div  class='blancas'></div>
+		<div  id='18b' class='negras'> <div class="ficharoja" id="18f"> </div> </div>
+	</div>
+	
+	<div id='segunda' class='fila'>
+		
+		<div  id='21b' class='negras'> <div class="ficharoja" id="21f"> </div> </div>
+		<div  class='blancas'></div>
+		<div  id='23b' class='negras'> <div class="ficharoja" id="23f"> </div> </div>
+		<div  class='blancas'></div>
+		<div  id='25b' class='negras'> <div class="ficharoja" id="25f"> </div> </div>
+		<div  class='blancas'></div>
+		<div  id='27b' class='negras'> <div class="ficharoja" id="27f"> </div> </div>
+		<div  class='blancas'></div>
+	</div>
+	
+	<div id='tercera' class='fila'>
+		
+		<div  class='blancas'></div>
+		<div  id='32b' class='negras'> <div class="ficharoja" id="32f"></div> </div>
+		<div  class='blancas'></div>
+		<div  id='34b' class='negras'> <div class="ficharoja" id="34f"></div> </div>
+		<div  class='blancas'></div>
+		<div  id='36b' class='negras'> <div class="ficharoja" id="36f"></div> </div>
+		<div  class='blancas'></div>
+		<div  id='38b' class='negras'> <div class="ficharoja" id="38f"></div> </div>
+	</div>
+	
+	<div id='cuarta' class='fila'>
+		
+		<div  id='41b' class='negras'></div>
+		<div  class='blancas'></div>
+		<div  id='43b' class='negras'></div>
+		<div  class='blancas'></div>
+		<div  id='45b' class='negras'></div>
+		<div  class='blancas'></div>
+		<div  id='47b' class='negras'></div>
+		<div  class='blancas'></div>
+	</div>
+	
+	<div id='quinta' class='fila'>
+		
+		<div  class='blancas'></div>
+		<div  id='52b' class='negras'></div>
+		<div  class='blancas'></div>
+		<div  id='54b' class='negras'></div>
+		<div  class='blancas'></div>
+		<div  id='56b' class='negras'></div>
+		<div  class='blancas'></div>
+		<div  id='58b' class='negras'></div>
+	</div>
+	
+	<div id='sexta' class='fila'>
+		
+		<div  id='61b' class='negras'></div>
+		<div  class='blancas'></div>
+		<div  id='63b' class='negras'></div>
+		<div  class='blancas'></div>
+		<div  id='65b' class='negras'></div>
+		<div  class='blancas'></div>
+		<div  id='67b' class='negras'></div>
+		<div  class='blancas'></div>
+	</div>
+	
+	<div id='septima' class='fila'>
+		
+		<div  class='blancas'></div>
+		<div  id='72b' class='negras'> <div class="fichaazul" id="72f"></div> </div>
+		<div  class='blancas'></div>
+		<div  id='74b' class='negras'> <div class="fichaazul" id="74f"></div> </div>
+		<div  class='blancas'></div>
+		<div  id='76b' class='negras'> <div class="fichaazul" id="76f"></div> </div>
+		<div  class='blancas'></div>
+		<div  id='78b' class='negras'> <div class="fichaazul" id="78f"></div> </div>
+	</div>
+	
+		<div id='octava' class='fila'>
+		
+		<div  id='81b' class='negras'> <div class="fichaazul" id="81f"></div> </div>
+		<div  class='blancas'></div>
+		<div  id='83b' class='negras'> <div class="fichaazul" id="83f"></div> </div>
+		<div  class='blancas'></div>
+		<div  id='85b' class='negras'> <div class="fichaazul" id="85f"></div> </div>
+		<div  class='blancas'></div>
+		<div  id='87b' class='negras'> <div class="fichaazul" id="87f"></div> </div>
+		<div  class='blancas'></div>
+	</div>
+	
+		<div id='novena' class='fila'>
+		
+		<div  class='blancas'></div>
+		<div  id='92b' class='negras'> <div class="fichaazul" id="92f"></div> </div>
+		<div  class='blancas'></div>
+		<div  id='94b' class='negras'> <div class="fichaazul" id="94f"></div> </div>
+		<div  class='blancas'></div>
+		<div  id='96b' class='negras'> <div class="fichaazul" id="96f"></div> </div>
+		<div  class='blancas'></div>
+		<div  id='98b' class='negras'> <div class="fichaazul" id="98f"></div> </div>
+	</div>
+</div>
+<script>
+
+
+
+
+function clickon(event) { 
+
+
+
+var ifselected = null;
+var idel = "f0" //nada
+var x = event.target;
+var ide =  x.id;
+
+//var atribute=x.getAttribute("class");
+//alert(atribute)
+		
+ifselected = document.getElementsByClassName("ficharojaselected");
+if(ifselected[0]== null)
+{
+ifselected = document.getElementsByClassName("fichaazulselected");
+}
+for (var i = 0, n = ifselected.length; i < n; ++i) {
+idel= ifselected[i].id;
+//alert(idel)//f12
+}
+
+
+		
+if(ifselected[0]== null || ide == idel)//si no hay fichas seleccionadas ejecutara el siguiente codigo
+{
+
+	var x = event.target;
+	var ide =  x.id;
+	
+	var selected = null;
+	if (selected == null) {
+				selected = document.getElementById(ide);
+			}
+			
+	var atribute=selected.getAttribute("class");
+//alert(atribute)
+	if (atribute== "ficharoja")
+	{selected.setAttribute("class", "ficharojaselected");}
+	if (atribute== "ficharojaselected")
+	{selected.setAttribute("class", "ficharoja");}
+	
+	if (atribute== "fichaazul")
+	{selected.setAttribute("class", "fichaazulselected");}
+	if (atribute== "fichaazulselected")
+	{selected.setAttribute("class", "fichaazul");}
+}
+	else
+{
+
+		moverficha(event,idel); //envio evento y que ficha esta seleccionada
+
+		
+		
+
+
+		
+
+
+
+		funcerror(event);
+		setTimeout(errorreverse, 200);
+		
+}
+}
+
+
+
+function moverficha(event,fichaselec)  //evento,id seleccionada
+{
+var xyz2 = event.target;
+var temporal = xyz2.className;
+
+var idtemp = xyz2.id;
+var selecto= parseInt(fichaselec, 10);  //converto to int
+var opcion= parseInt(idtemp, 10);  //converto to int
+
+var fich = document.getElementById(fichaselec);//que ficha esta seleccionada?
+var ficha=fich.className;
+	
+var haymovi= haymovimiento(selecto,opcion,ficha); //enviar seleccion, click, y que ficha
+//alert(haymovi)
+//alert(selecto)
+//alert(opcion)
+var secome= sepuedecomer(selecto,opcion,ficha,temporal); //enviar seleccion, click, y que ficha
+
+//alert(haymovi)
+//alert(secome)
+
+
+
+if(temporal== "ficharoja" || temporal== "fichaazul" || temporal== "blancas" || (haymovi==true && secome ==true) || (haymovi==false && secome ==false) )
+{
+	funcerror(event);
+	setTimeout(errorreverse, 200);
+}
+else
+{
+	var element = document.getElementById(fichaselec);
+	var classname=element.className;
+	
+	var ide2=idtemp;
+	element.parentNode.removeChild(element);  //borraficha
+
+
+	var xyz = event.target;
+
+
+	var element2 = document.createElement("div");
+				element2.className = classname;
+				element2.id = opcion+"f";
+				
+	 xyz.appendChild(element2);  //agregaficha nueva     
+
+
+	selected= xyz.firstChild
+			
+	 var atribute=classname;         
+		  
+			 
+	   
+		if (atribute== "ficharojaselected")
+		{selected.setAttribute("class", "ficharoja");}
+		
+
+		if (atribute== "fichaazulselected")
+		{selected.setAttribute("class", "fichaazul");}         
+    
+}
+
+
+function funcerror(event) {
+
+var xy = event.target;
+var idefonso =  xy.className;
+xy.setAttribute("class", "nel");
+ window.idefonso=idefonso;
+ window.targett=xy;
+} 
+
+function errorreverse(event) {
+var xy = window.targett;
+xy.setAttribute("class", window.idefonso);
+} 
+
+}
+
+function  sepuedecomer(selecto,opcion,ficha,temporal)   //indica si se puede hacer el movimiento
+{
+if(ficha == "ficharojaselected")
+	{
+		if(selecto==12 && (opcion == 34 ))
+		{
+			var foreing = 23+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+			return true;
+		}
+		if(selecto==14 && (opcion == 32  || opcion == 36 ))
+		{
+			var foreing = 23+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 25+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==16 && (opcion == 34  || opcion == 38 ))
+		{
+			var foreing = 25+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 27+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==18 && (opcion == 36 ))
+		{
+			var foreing = 27+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		
+		if(selecto==21 && (opcion == 43 ))
+		{
+			var foreing = 32+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		
+		if(selecto==23 && (opcion == 41  || opcion == 45 ))
+		{
+			var foreing = 32+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 34+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		
+		if(selecto==25 && (opcion == 43  || opcion == 47 ))
+		{
+			var foreing = 34+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 36+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==27 && (opcion == 45 ))
+		{
+			var foreing = 36+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==32 && (opcion == 54 ))
+		{
+			var foreing = 43+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==34 && (opcion == 52  || opcion == 56 ))
+		{
+			var foreing = 43+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 45+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==36 && (opcion == 54  || opcion == 58 ))
+		{
+			var foreing = 47+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 45+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==38 && (opcion == 56 ))
+		{
+			var foreing = 47+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==41 && (opcion == 63 ))
+		{
+			var foreing = 52+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==43 && (opcion == 61  || opcion == 65 ))
+		{
+			var foreing = 52+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 54+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==45 && (opcion == 63  || opcion == 67 ))
+		{
+			var foreing = 54+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 50+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==47 && (opcion == 65 ))
+		{
+			var foreing = 50+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==52 && (opcion == 74 ))
+		{
+			var foreing = 63+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==54 && (opcion == 72  || opcion == 76 ))
+		{
+			var foreing = 63+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 65+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==56 && (opcion == 74  || opcion == 78 ))
+		{
+			var foreing = 65+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 67+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==58 && (opcion == 76 ))
+		{
+			var foreing = 67+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==61 && (opcion == 83 ))
+		{
+			var foreing = 72+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==63 && (opcion == 81  || opcion == 85 ))
+		{
+			var foreing = 74+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 72+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+				//alert(elementZ.id)
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==65 && (opcion == 83  || opcion == 87 ))
+		{
+			var foreing = 74+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 76+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==67 && (opcion == 85 ))
+		{
+			var foreing = 76+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==72 && (opcion == 94 ))
+		{
+			var foreing = 83+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==74 && (opcion == 92  || opcion == 96 ))
+		{
+			var foreing = 83+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 85+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==76 && (opcion == 94  || opcion == 98 ))
+		{
+			var foreing = 85+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 87+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==78 && (opcion == 96 ))
+		{
+			var foreing = 87+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		else
+		{
+		return false;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		//---------------------
+		
+		
+	}
+
+	if(ficha == "fichaazulselected")
+	{
+		if(selecto==92 && (opcion == 74 ))
+		{
+			var foreing = 83+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+			return true;
+		}
+		if(selecto==94 && (opcion == 72  || opcion == 76 ))
+		{
+			var foreing = 83+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 85+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==96 && (opcion == 74  || opcion == 78 ))
+		{
+			var foreing = 85+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 87+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==98 && (opcion == 76 ))
+		{
+			var foreing = 87+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		
+		if(selecto==81 && (opcion == 63 ))
+		{
+			var foreing = 72+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		
+		if(selecto==83 && (opcion == 61  || opcion == 65 ))
+		{
+			var foreing = 72+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 74+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		
+		if(selecto==85 && (opcion == 63  || opcion == 67 ))
+		{
+			var foreing = 74+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 76+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==87 && (opcion == 65 ))
+		{
+			var foreing = 76+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==72 && (opcion == 54 ))
+		{
+			var foreing = 43+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==74 && (opcion == 52  || opcion == 56 ))
+		{
+			var foreing = 43+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 45+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==76 && (opcion == 54  || opcion == 58 ))
+		{
+			var foreing = 47+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 45+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==78 && (opcion == 56 ))
+		{
+			var foreing = 47+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==61 && (opcion == 43 ))
+		{
+			var foreing = 52+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==63 && (opcion == 41  || opcion == 45 ))
+		{
+			var foreing = 52+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 54+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==65 && (opcion == 43  || opcion == 47 ))
+		{
+			var foreing = 54+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 50+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==67 && (opcion == 45 ))
+		{
+			var foreing = 50+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==52 && (opcion == 34 ))
+		{
+			var foreing = 43+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==54 && (opcion == 32  || opcion == 36 ))
+		{
+			var foreing = 45+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 43+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==56 && (opcion == 34  || opcion == 38 ))
+		{
+			var foreing = 45+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 47+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==58 && (opcion == 36 ))
+		{
+			var foreing = 47+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==41 && (opcion == 23 ))
+		{
+			var foreing = 32+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==43 && (opcion == 21  || opcion == 25 ))
+		{
+			var foreing = 34+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 72+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+				alert(elementZ.id)
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==45 && (opcion == 23  || opcion == 27 ))
+		{
+			var foreing = 34+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 36+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==47 && (opcion == 25 ))
+		{
+			var foreing = 36+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==32 && (opcion == 14 ))
+		{
+			var foreing = 23+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==34 && (opcion == 12  || opcion == 16 ))
+		{
+			var foreing = 23+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 25+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==36 && (opcion == 14  || opcion == 18 ))
+		{
+			var foreing = 25+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+					var foreing = 27+"f";
+					var elementZ = document.getElementById(foreing);
+					if(elementZ== null)
+				{
+					return false;
+				}
+				
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		if(selecto==38 && (opcion == 16 ))
+		{
+			var foreing = 27+"f";
+			var elementZ = document.getElementById(foreing);
+			if(elementZ== null)
+			{
+				return false;
+			}
+			if(temporal== "ficharoja" || temporal== "fichaazul")
+				{ }
+				else
+				{
+			elementZ.parentNode.removeChild(elementZ);  //borraficha
+				}
+
+			return true;
+		}
+		else
+		{
+		return false;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		//---------------------
+		
+	
+	
+	
+	}
+	
+}
+
+function  haymovimiento(selecto,opcion,ficha)   //indica si se puede hacer el movimiento
+{
+	if(ficha == "ficharojaselected")
+	{
+		if(selecto==12 && (opcion == 21 || opcion == 23))
+		{
+			return true;
+		}
+		else if( selecto==14 && (opcion == 23 || opcion == 25) )
+		{
+			return true;
+		}
+		else if( selecto==16 && (opcion == 27 || opcion == 25) )
+		{
+			return true;
+		}
+		else if( selecto==18 && (opcion == 27 ) )
+		{
+			return true;
+		}
+		//------------------------------
+		if(selecto==21 && (opcion == 32 ))
+		{
+			return true;
+		}
+		else if( selecto==23 && (opcion == 32 || opcion == 34) )
+		{
+			return true;
+		}
+		else if( selecto==25 && (opcion == 34 || opcion == 36) )
+		{
+			return true;
+		}
+		else if( selecto==27 && (opcion == 36  || opcion == 38) )
+		{
+			return true;
+		}
+		//-------------------------------
+		if(selecto==32 && (opcion == 41 || opcion == 43))
+		{
+			return true;
+		}
+		else if( selecto==34 && (opcion == 43 || opcion == 45) )
+		{
+			return true;
+		}
+		else if( selecto==36 && (opcion == 47 || opcion == 45) )
+		{
+			return true;
+		}
+		else if( selecto==38 && (opcion == 47 ) )
+		{
+			return true;
+		}
+		//------------------------------
+		if(selecto==41 && (opcion == 52 ))
+		{
+			return true;
+		}
+		else if( selecto==43 && (opcion == 52 || opcion == 54) )
+		{
+			return true;
+		}
+		else if( selecto==45 && (opcion == 54 || opcion == 56) )
+		{
+			return true;
+		}
+		else if( selecto==47 && (opcion == 56  || opcion == 58) )
+		{
+			return true;
+		}
+		//-------------------------------
+		if(selecto==52 && (opcion == 61 || opcion == 63))
+		{
+			return true;
+		}
+		else if( selecto==54 && (opcion == 63 || opcion == 65) )
+		{
+			return true;
+		}
+		else if( selecto==56 && (opcion == 67 || opcion == 65) )
+		{
+			return true;
+		}
+		else if( selecto==58 && (opcion == 67 ) )
+		{
+			return true;
+		}
+		//------------------------------
+		if(selecto==61 && (opcion == 72 ))
+		{
+			return true;
+		}
+		else if( selecto==63 && (opcion == 72 || opcion == 74) )
+		{
+			return true;
+		}
+		else if( selecto==65 && (opcion == 74 || opcion == 76) )
+		{
+			return true;
+		}
+		else if( selecto==67 && (opcion == 76  || opcion == 78) )
+		{
+			return true;
+		}
+		//-------------------------------
+		if(selecto==72 && (opcion == 81 || opcion == 83))
+		{
+			return true;
+		}
+		else if( selecto==74 && (opcion == 83 || opcion == 85) )
+		{
+			return true;
+		}
+		else if( selecto==76 && (opcion == 87 || opcion == 85) )
+		{
+			return true;
+		}
+		else if( selecto==78 && (opcion == 87 ) )
+		{
+			return true;
+		}
+		//------------------------------
+		if(selecto==81 && (opcion == 92 ))
+		{
+			return true;
+		}
+		else if( selecto==83 && (opcion == 92 || opcion == 94) )
+		{
+			return true;
+		}
+		else if( selecto==85 && (opcion == 94 || opcion == 96) )
+		{
+			return true;
+		}
+		else if( selecto==87 && (opcion == 96  || opcion == 98) )
+		{
+			return true;
+		}
+		//-------------------------------
+		else
+			{return false;}
+	}
+	
+	if(ficha == "fichaazulselected")
+	{
+		//------------------------------
+		if(selecto==21 && (opcion == 12 ))
+		{
+			return true;
+		}
+		else if( selecto==23 && (opcion == 12 || opcion == 14) )
+		{
+			return true;
+		}
+		else if( selecto==25 && (opcion ==14 || opcion == 16) )
+		{
+			return true;
+		}
+		else if( selecto==27 && (opcion == 16  || opcion ==18) )
+		{
+			return true;
+		}
+		//------------------------------
+		if(selecto==32 && (opcion == 21 || opcion == 23 ))
+		{
+			return true;
+		}
+		else if( selecto==34 && (opcion == 23 || opcion == 25) )
+		{
+			return true;
+		}
+		else if( selecto==36 && (opcion == 25 || opcion == 27) )
+		{
+			return true;
+		}
+		else if( selecto==38 && (opcion == 27  ) )
+		{
+			return true;
+		}
+		//------------------------------
+		if(selecto==41 && (opcion == 32 ))
+		{
+			return true;
+		}
+		else if( selecto==43 && (opcion == 32 || opcion == 34) )
+		{
+			return true;
+		}
+		else if( selecto==45 && (opcion ==34 || opcion == 36) )
+		{
+			return true;
+		}
+		else if( selecto==47 && (opcion == 36  || opcion ==38) )
+		{
+			return true;
+		}
+		//------------------------------
+		if(selecto==52 && (opcion == 41 || opcion == 43 ))
+		{
+			return true;
+		}
+		else if( selecto==54 && (opcion == 43 || opcion == 45) )
+		{
+			return true;
+		}
+		else if( selecto==56 && (opcion == 45 || opcion == 47) )
+		{
+			return true;
+		}
+		else if( selecto==58 && (opcion == 47  ) )
+		{
+			return true;
+		}
+		//------------------------------
+		if(selecto==61 && (opcion == 52 ))
+		{
+			return true;
+		}
+		else if( selecto==63 && (opcion == 52 || opcion == 54) )
+		{
+			return true;
+		}
+		else if( selecto==65 && (opcion == 54 || opcion == 56) )
+		{
+			return true;
+		}
+		else if( selecto==67 && (opcion == 56  || opcion ==58) )
+		{
+			return true;
+		}
+		//------------------------------
+		if(selecto==72 && (opcion == 61 || opcion == 63 ))
+		{
+			return true;
+		}
+		else if( selecto==74 && (opcion == 63 || opcion == 65) )
+		{
+			return true;
+		}
+		else if( selecto==76 && (opcion == 65 || opcion == 67) )
+		{
+			return true;
+		}
+		else if( selecto==78 && (opcion == 67  ) )
+		{
+			return true;
+		}
+		//------------------------------
+		if(selecto==81 && (opcion == 72 ))
+		{
+			return true;
+		}
+		else if( selecto==83 && (opcion == 72 || opcion == 74) )
+		{
+			return true;
+		}
+		else if( selecto==85 && (opcion == 74 || opcion == 76) )
+		{
+			return true;
+		}
+		else if( selecto==87 && (opcion == 76  || opcion ==78) )
+		{
+			return true;
+		}
+		//------------------------------
+		if(selecto==92 && (opcion == 81 || opcion == 83 ))
+		{
+			return true;
+		}
+		else if( selecto==94 && (opcion == 83 || opcion == 85) )
+		{
+			return true;
+		}
+		else if( selecto==96 && (opcion == 85 || opcion == 87) )
+		{
+			return true;
+		}
+		else if( selecto==98 && (opcion == 87  ) )
+		{
+			return true;
+		}
+		//-------------------------------
+		else
+			{return false;}
+	
+	
+	
+	
+	}
+
+}      
+            
+
+            
+        
+
+
+
+	
+</script>
+  
+</body>
+</html>
